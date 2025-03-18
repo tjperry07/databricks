@@ -1,0 +1,8 @@
+fileVersion: 1
+id: "33"
+mappingDefinitions:
+  SOURCE_SQUIRREL:
+    database: coalesce_aws_dbx
+    schema: tatiana_docs_testing
+name: Databricks Testing
+type: Environment
