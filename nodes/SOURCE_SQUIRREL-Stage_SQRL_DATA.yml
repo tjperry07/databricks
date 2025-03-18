@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: Remove description
+  description: ""
   isMultisource: false
   locationName: SOURCE_SQUIRREL
   materializationType: table
