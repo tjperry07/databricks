@@ -10,7 +10,7 @@ operation:
     truncateBefore: true
   database: ""
   deployEnabled: true
-  description: This node creates the Stage_SQRL_DATA table, truncates it, and then loads data from the squirrel_data table. Additionally, it includes data quality tests to check for uniqueness in the Area Name and Area ID columns within the Stage_SQRL_DATA table.
+  description: Remove description
   isMultisource: false
   locationName: SOURCE_SQUIRREL
   materializationType: table
