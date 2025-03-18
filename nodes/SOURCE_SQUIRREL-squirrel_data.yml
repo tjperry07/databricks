@@ -1,0 +1,288 @@
+fileVersion: 1
+id: 74db5200-d8ad-462d-ab67-15d80164e082
+name: squirrel_data
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SOURCE_SQUIRREL
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a3733aa-cdf1-463d-bde3-bb1b28063f5f
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Area Name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2f3ea4c0-a9bc-4bdd-a0ee-85c17c414d30
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Area ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eab1a1a1-356d-4691-9d51-fbc63cc9d2f3
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Park Name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa7f1743-d956-45e2-b421-60711a9638a1
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: LONG
+        defaultValue: ""
+        description: ""
+        name: Park ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdbd546f-7bb7-48e5-ab94-0e16110478a9
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Squirrel ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a925331-3cec-4297-97e9-f15cad5f6437
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Primary Fur Color
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ed4d812-7981-479a-9ab1-10c8d30c77d9
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Highlights in Fur Color
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1afc6a4d-dadc-408d-b3cb-2c4a6b78330d
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Color Notes
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd8c693f-1add-4705-9e8e-5dfca4637114
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Location
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0278e54-6631-4764-9429-eaf18178c60c
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Above Ground (Height in Feet)
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 718c15a9-f1b1-4579-8c43-3fa3d77016cd
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Specific Location
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cd6b3ad3-70c1-4124-9039-f4567e173284
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Activities
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cbc907ab-74e3-452d-9524-e40b5d52dfa2
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Interactions with Humans
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19634cc9-8832-4778-b57f-98c3aac690d4
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Other Notes or Observations
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8cd9bf7a-f4ee-4603-9830-1bd7beb3dc1b
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: Squirrel Latitude (DD.DDDDDD)
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 602c244b-858b-4bc7-9ee6-d4df48ddc38e
+          stepCounter: 74db5200-d8ad-462d-ab67-15d80164e082
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: Squirrel Longitude (-DD.DDDDDD)
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: squirrel_data
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
