@@ -1,0 +1,101 @@
+fileVersion: 1
+id: 9f290910-20f8-413c-a136-5b2a569e5045
+name: stg_stories
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SCRATCH-DB
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f1e1c1c0-4f19-4ea8-b9ce-32e9a841c4f0
+          stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Area_Name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: adeef325-2740-4006-a92a-52899bc01de5
+          stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Area_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fa60d85-d2c7-42ce-8a18-c184265903c9
+          stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Park_Name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0cddd0c-4684-40f3-b9aa-913dc3d283d6
+          stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: Park_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 26ff5148-5ac6-4b95-a70f-28f16ca871d6
+          stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: Squirrels_Parks_Stores
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: stg_stories
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

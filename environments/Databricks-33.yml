@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "33"
+mappingDefinitions:
+  SCRATCH-DB:
+    database: coalesce_aws_dbx
+    schema: tatiana_dev
+  SOURCE_SQUIRREL:
+    database: coalesce_aws_dbx
+    schema: tatiana_docs_testing
+name: Databricks
+type: Environment

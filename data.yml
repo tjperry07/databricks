@@ -1,3 +1,3 @@
-defaultStorageMapping: null
+defaultStorageMapping: SCRATCH-DB
 fileVersion: 3
 platformKind: databricks

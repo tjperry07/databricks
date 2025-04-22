@@ -1,0 +1,109 @@
+fileVersion: 1
+id: 68d07cd4-fa49-481c-a340-0f4bab9cd708
+name: stg_stg_stories_rollback
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SCRATCH-DB
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8ee99a0-a50e-4a6e-8543-fcfd1df68cf9
+          stepCounter: 68d07cd4-fa49-481c-a340-0f4bab9cd708
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Area_Name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f1e1c1c0-4f19-4ea8-b9ce-32e9a841c4f0
+                stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6bb28a65-894f-455b-97c6-275bd20b1742
+          stepCounter: 68d07cd4-fa49-481c-a340-0f4bab9cd708
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Area_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: adeef325-2740-4006-a92a-52899bc01de5
+                stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76adc998-8af3-4fe3-904d-7ddfe166de77
+          stepCounter: 68d07cd4-fa49-481c-a340-0f4bab9cd708
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Park_Name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7fa60d85-d2c7-42ce-8a18-c184265903c9
+                stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f9ffe22d-61de-4b88-ad23-7b27749c5090
+          stepCounter: 68d07cd4-fa49-481c-a340-0f4bab9cd708
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: Park_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d0cddd0c-4684-40f3-b9aa-913dc3d283d6
+                stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1bbacbae-af85-46c9-8b14-f4a646654459
+          stepCounter: 68d07cd4-fa49-481c-a340-0f4bab9cd708
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Squirrels_Parks_Stores
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 26ff5148-5ac6-4b95-a70f-28f16ca871d6
+                stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SCRATCH-DB
+            nodeName: stg_stories
+        join:
+          joinCondition: FROM {{ ref('SCRATCH-DB', 'stg_stories') }} `stg_stories`
+        name: stg_stg_stories_rollback
+        noLinkRefs: []
+  name: stg_stg_stories_rollback
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
