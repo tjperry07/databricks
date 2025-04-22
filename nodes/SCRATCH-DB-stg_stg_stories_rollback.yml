@@ -44,7 +44,7 @@ operation:
           - columnReferences:
               - columnCounter: adeef325-2740-4006-a92a-52899bc01de5
                 stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
-            transform: ""
+            transform: COALESCE(`stg_stories`.`Area_ID`, 'None')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: 76adc998-8af3-4fe3-904d-7ddfe166de77
