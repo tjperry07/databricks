@@ -58,7 +58,7 @@ operation:
           - columnReferences:
               - columnCounter: 7fa60d85-d2c7-42ce-8a18-c184265903c9
                 stepCounter: 9f290910-20f8-413c-a136-5b2a569e5045
-            transform: ""
+            transform: COALESCE(`stg_stories`.`Park_Name`, 'None')
       - appliedColumnTests: {}
         columnReference:
           columnCounter: f9ffe22d-61de-4b88-ad23-7b27749c5090
