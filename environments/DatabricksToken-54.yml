@@ -1,0 +1,17 @@
+fileVersion: 1
+id: "54"
+mappingDefinitions:
+  ACCUWEATHER:
+    database: samples
+    schema: accuweather
+  GENERAL:
+    database: coalesce_aws_dbx
+    schema: tatiana_docs_testing_prod
+  NYCTAXIS:
+    database: samples
+    schema: nyctaxi
+  SOURCE_SQUIRREL:
+    database: coalesce_aws_dbx
+    schema: tatiana_docs_testing
+name: Databricks Token
+type: Environment

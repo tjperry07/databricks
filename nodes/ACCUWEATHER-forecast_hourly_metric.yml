@@ -1,0 +1,679 @@
+fileVersion: 1
+id: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+name: forecast_hourly_metric
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: ACCUWEATHER
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e482e13f-6c72-415e-b885-cdd9a7ccd43f
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: city_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eee37d82-41cf-4e95-9db9-3ea2901d6eaf
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: country_code
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17ca9318-191a-4b1e-81d7-539ef7f0336b
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: latitude
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 185568ae-d557-4199-b153-28814604356a
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: longitude
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28cc35fd-ca93-4191-9474-b24e5a79888d
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: datetime_valid_local
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6fba3725-983f-4a7d-bc30-1f46dc7fa9ac
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: gmt_offset
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c1c636f3-60e2-480c-beb6-89f823447c22
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: cloud_base_height
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04e0694e-7123-410c-8f75-de7f6110ef24
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: cloud_cover_perc_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6967a56f-b4f5-4993-96ed-9a58d4b9270d
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: humidity_relative
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a3f49ef-6a2c-4354-ae9a-4353e26a60bc
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: index_uv
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a72fe690-71e7-4bfb-83b8-3bd22b3aee84
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: has_ice
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ebfea7d5-4491-4a6b-a2d6-7172c50e8853
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: ice_lwe
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7880e677-73ba-438d-9d88-689455946071
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: ice_probability
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 700f6c2b-4ef1-471d-91ae-37137ba8f1ba
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: minutes_of_sun
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e1137a1-0a9f-4f32-9ce0-4158fef5e47e
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: has_precipitation
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e8cff416-a0d7-4d0f-8d36-66eee2cfe895
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: precipitation_lwe
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aff5a48f-28a7-458a-ac40-6e2e08d6f631
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: precipitation_probability
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f3c34a0e-afa9-4b22-9a50-84b07d8d1342
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: precipitation_type_desc
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b908fe6-5073-4793-99dc-3d09e7dacaed
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: has_rain
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1be5d4a3-9bc3-452d-af66-982c84ad6072
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: rain_lwe
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b04630c2-a4e1-4440-9a74-608dc6910004
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: rain_probability
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a0ec462-412d-4db7-a493-040b452d58a5
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: snow_liquid_ratio_accuweather
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0a755f91-17e4-4d3e-9b0b-6cc86dcf84fb
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: BOOLEAN
+        defaultValue: ""
+        description: ""
+        name: has_snow
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: baa87d95-3ec9-4dd2-a67a-570bb580622e
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: snow
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac5d988b-6f88-4200-a537-7e23271c22cd
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: snow_lwe
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f0e4b7d-d89d-493f-bc32-369a947b5a38
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: snow_probability
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ad393eff-b2c6-480e-adf5-57bb86f52d56
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: solar_irradiance
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ce40d548-812d-4b12-bf05-f1ab5b96f0f5
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: temperature
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74857edd-616a-4672-a310-cdf8e83de691
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: temperature_dew_point
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60a6002f-9b11-47c7-809f-085e21f339bc
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: temperature_heat_index
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a83f17e-e06b-4c94-8a61-69de773b97d8
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: temperature_realfeel
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca693428-9b71-4024-97ce-b66d28be0f10
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: temperature_realfeel_shade
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 03e2f8fb-b014-4ceb-8900-824fa61a1547
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: temperature_wind_chill
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: da212556-734a-4a30-9fe5-caf0e461df21
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: thunderstorm_probability
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 416589cc-0f14-4cc0-adb8-c29f6f14cd50
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: visibility
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 48fd7cd2-71f0-45f5-a162-7cbfe2d8cb4b
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: weather_code
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 38b36716-8f7b-4f3b-991a-885a26b867b2
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: wind_direction
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a0a4372-dd38-41f4-ba7e-d05bf01655a1
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: wind_gust
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 742a2553-d9af-4ed0-83c3-7e94d5618241
+          stepCounter: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: wind_speed
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: forecast_hourly_metric
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,4 +1,7 @@
-defaultStorageMapping: SOURCE_SQUIRREL
+defaultStorageMapping: GENERAL
 fileVersion: 1
 locations:
+  - ACCUWEATHER
+  - GENERAL
+  - NYCTAXIS
   - SOURCE_SQUIRREL

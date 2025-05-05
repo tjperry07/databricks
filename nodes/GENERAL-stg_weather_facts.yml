@@ -1,0 +1,261 @@
+fileVersion: 1
+id: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+name: stg_weather_facts
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: GENERAL
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc5310b4-f7a6-4057-93b5-ae0dae52c9cd
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: BIGINT
+        description: ""
+        name: dim_weather_metrics_key
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3f78caf8-b6c1-44b8-843e-ee31c179af0a
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67902090-fc45-44a3-98dd-feef4a3e67db
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: STRING
+        description: ""
+        name: city_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d3f34b6c-7354-4507-bb2d-d148cdda79b0
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ca04fff-ce05-48f0-90c7-1473e0da849d
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: STRING
+        description: ""
+        name: country_code
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 79f4999b-58d9-440e-ae95-e71f9a12db0e
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1310326b-9613-4493-819f-dcecbda2b380
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: measurement_time
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 77d1f716-b875-4654-9414-69ac4bb0cd74
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ca3cc68c-342b-447c-8350-b6a7c7dc5207
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: humidity_relative
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b021db8e-ff55-422a-94eb-ef1ecb15ff20
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ROUND(`dim_weather_metrics`.`humidity_relative`, 1)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ee6ab965-198b-46af-aa45-157d18285602
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: wind_speed
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f4ab681e-b853-4163-a00a-d1195c7ca4e9
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb0e01f1-c427-4e2c-8f1e-3aee4ec8499d
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: STRING
+        description: ""
+        name: precipitation_type_desc
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b90243a-a040-4e48-9ec5-4719abe894af
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: COALESCE(`forecast_hourly_metric`.`precipitation_type_desc`, 'None')
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c1290ce6-f673-4fc5-aa30-9bfd6045941e
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: INTEGER
+        description: ""
+        name: cloud_cover_percent
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1e6dc405-9564-46e6-b5f6-00738c106050
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d8a265ee-a6fc-4586-bcdb-598158a31532
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5c0dc969-cf48-4edc-9be8-841105892b11
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ROUND(`dim_weather_metrics`.`temperature`, 1)
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87d23e16-2812-4855-a668-8b7b458ce5eb
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: NUMERIC
+        description: ""
+        name: system_version
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e25052f2-32cb-4cff-a70b-7186ea3bb19b
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87a2ea7e-5516-4975-aba3-5c7ba51d774e
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: VARCHAR(1)
+        description: ""
+        name: system_current_flag
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: aad893ca-e604-431c-aef3-2fe46beae3f0
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6570a052-dadc-45bd-9b33-e3ba054f70d8
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: system_start_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2484b4ad-268e-422e-8420-05e0cf18ac1c
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e62cb440-3de8-4204-844a-820c3f7b7bbb
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: system_end_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 171a16b2-ea8e-4c2a-95ac-6a04765c0a4b
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c5fc006c-2128-4914-a936-5dc44e09c987
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: system_create_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d52cadfd-8ca2-4656-bc93-c3bc7705fb01
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f590b204-0118-49c4-b523-b282aa447b47
+          stepCounter: 14a39fc4-251a-406b-a6dd-baa3c21aad7a
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: system_update_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dbfbff94-b592-4cfc-987a-48ebf2435f1d
+                stepCounter: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          dim_weather_metrics: 5423614e-bfc1-4bcf-ac75-d1f86505c91d
+          forecast_hourly_metric: d868bfbb-2f8c-4cd0-9576-3e61f55be779
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: ACCUWEATHER
+            nodeName: forecast_hourly_metric
+          - locationName: GENERAL
+            nodeName: dim_weather_metrics
+        join:
+          joinCondition: |+
+            FROM {{ ref('ACCUWEATHER', 'forecast_hourly_metric') }} `forecast_hourly_metric`
+            LEFT JOIN {{ ref('GENERAL', 'dim_weather_metrics') }} `dim_weather_metrics`
+              ON `forecast_hourly_metric`.`city_name` = `dim_weather_metrics`.`city_name`
+              AND `forecast_hourly_metric`.`country_code` = `dim_weather_metrics`.`country_code`
+              AND `forecast_hourly_metric`.`datetime_valid_local` = `dim_weather_metrics`.`measurement_time`
+
+
+
+        name: stg_weather_facts
+        noLinkRefs: []
+  name: stg_weather_facts
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
