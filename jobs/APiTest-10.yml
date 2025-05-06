@@ -1,6 +1,0 @@
-excludeSelector: ""
-fileVersion: 1
-id: "10"
-includeSelector: "{ location: GENERAL name: dim_weather_metrics } OR { location: ACCUWEATHER name: forecast_hourly_metric } OR { location: GENERAL name: stg_weather_facts } OR { location: GENERAL name: stg_weather_metrics } OR { location: GENERAL name: fct_weather_facts }"
-name: APi Test
-type: Job
