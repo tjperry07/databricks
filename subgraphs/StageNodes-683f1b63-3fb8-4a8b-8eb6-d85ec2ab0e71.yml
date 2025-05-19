@@ -1,0 +1,7 @@
+fileVersion: 1
+id: 683f1b63-3fb8-4a8b-8eb6-d85ec2ab0e71
+name: StageNodes
+steps:
+  - 27c740b1-29f4-4509-9cf3-ff3a690fb913
+  - d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+type: Subgraph

@@ -1,0 +1,147 @@
+fileVersion: 1
+id: b75492e2-6570-40e1-b94d-64ed583412b8
+name: stg_trips_nyc_taxi
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SCRATCH-DB
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4946da78-01bf-4e19-bd7f-3fb112ac85b8
+          stepCounter: b75492e2-6570-40e1-b94d-64ed583412b8
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: tpep_pickup_datetime
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5ec59b9-771f-42c1-993a-7c37924fcb97
+                stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a71bd4b-3a4b-455d-9459-d28c94d6d291
+          stepCounter: b75492e2-6570-40e1-b94d-64ed583412b8
+        config: {}
+        dataType: TIMESTAMP
+        description: ""
+        name: tpep_dropoff_datetime
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 25231729-8ee1-4556-ada5-c4abcb59305b
+                stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aae8b5de-c16c-4ace-94e8-86bd1a15a2e8
+          stepCounter: b75492e2-6570-40e1-b94d-64ed583412b8
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: trip_distance
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6bdfb4f-2f9b-4f24-8608-49f372c7fb17
+                stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fded40da-4fad-479d-8ba1-4a555f54aff0
+          stepCounter: b75492e2-6570-40e1-b94d-64ed583412b8
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: fare_amount
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f43baec2-8a0c-4927-9f7e-e8d45c30bb31
+                stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7ccd04e1-0e5b-4544-bab4-3106a2b04db3
+          stepCounter: b75492e2-6570-40e1-b94d-64ed583412b8
+        config: {}
+        dataType: INT
+        description: ""
+        name: pickup_zip
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8683e85f-d9d7-4ef7-ab91-ab4f98b3324e
+                stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 634bea6b-8d35-4df9-b427-46380e7bbdb0
+          stepCounter: b75492e2-6570-40e1-b94d-64ed583412b8
+        config: {}
+        dataType: INT
+        description: ""
+        name: dropoff_zip
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 397eef4e-321f-44b9-bc9e-16dbfc68249c
+                stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c935cc4-3939-4926-a2c2-efabd9eefa3b
+          stepCounter: b75492e2-6570-40e1-b94d-64ed583412b8
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: fare_rank_by_zip
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              RANK() OVER (
+                PARTITION BY pickup_zip
+                ORDER BY fare_amount DESC
+              )
+        systemColumnType: None
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: NYC_TAXI
+            nodeName: trips
+        join:
+          joinCondition: FROM {{ ref('NYC_TAXI', 'trips') }} `trips`
+        name: stg_trips_nyc_taxi
+        noLinkRefs: []
+  name: stg_trips_nyc_taxi
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

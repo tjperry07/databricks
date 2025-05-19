@@ -1,0 +1,1551 @@
+fileVersion: 1
+id: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+name: stg_historical_daily_calendar_metric
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SCRATCH-DB
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bba2486f-4e05-4ae9-bb5c-0e193791e148
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: city_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 151a4e66-ad4d-42e2-86f7-629f30b901a3
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 74537a18-dc3f-41a8-8b2f-65af51742038
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: country_code
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a75996a1-8f3a-48c1-96c2-76ac0db62a69
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa593746-4496-40ce-ae23-1318f9fcf85f
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: latitude
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4b761596-aac7-49dd-b9aa-0409ce6be4e9
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f81d8aeb-4ac4-4b50-a998-dc1883a80f73
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: longitude
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7918044d-cde2-4f1f-a33b-6ba83f575386
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f98807f-f5f9-4279-8b5c-54daa4967220
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DATE
+        description: ""
+        name: date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: db4254bd-a6fc-4af2-8d4c-2ff09f09ae04
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b046a97-e986-48fe-a775-c79a2efba860
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: cloud_base_height_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 226e663d-0864-4916-8d01-953e753115e4
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3866a707-0d00-4575-afb9-fed2917a3819
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: cloud_base_height_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: dd00f518-5bfb-4173-b282-4f9ea6667677
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4c02ecab-8429-459b-b648-26210d23c420
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: cloud_base_height_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6ddb5cb2-2ee1-499b-9479-f3f54420198f
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e7bcf70-819c-4b13-9c74-a07453190e73
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: cloud_cover_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d07977e-90c3-475e-a3bc-cb666a74fc93
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3e7341fe-fa3b-440f-9321-7caf6b113c51
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: cloud_cover_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 245a0f10-cdf8-403b-a213-4ad256bd6fd7
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7fc27438-0e6e-48c7-9420-95811e92a50e
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: cloud_cover_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03ed4f95-4de4-4e22-9f2c-a2f6eddcecf7
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46ac664b-d4d4-4aef-aa76-8261d24b3955
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: cloud_cover_perc_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b22c70fb-f43f-40bc-bbc9-6816fc94e9bb
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3796e330-818e-4b21-96a6-9ef2eea9f67b
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: cloud_cover_perc_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7cb42904-8487-47ec-8969-f25593815441
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3859a755-1866-4dd4-bc91-c318245a7ba0
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: cloud_cover_perc_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 99013ddd-8a35-468d-bc06-1044379c4505
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2e273260-4258-4293-9323-54d1d3f38997
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: degree_days_cooling
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac2c9164-e68d-4608-a085-586f765add37
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eb2e3be2-f1a3-48c1-8e7d-90c78c527859
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: degree_days_freezing
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 76d2d486-cd8a-4b7c-8378-4553c83452dc
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a51a914-912b-44ff-bcde-7d9b60639616
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: degree_days_growing
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6542f3e9-6fd9-4e3a-9f21-3cf5d75e89a7
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f864884e-9a9f-47ff-8350-36919539f424
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: degree_days_heating
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e57b5a50-e5b9-4c4a-aeff-fe1ebf1a7be0
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d81d4e7f-2474-4dc1-9035-1166353ede50
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: humidity_relative_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 13f04be4-c3fa-469c-b9f6-6ba79a0f4d49
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2dd97d24-44cf-486e-a9d1-8801cd0470f8
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: humidity_relative_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2290064-e1cc-490c-bc71-24fc7c61d9bb
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4ef5b66d-bae3-4f6f-aed6-52b546b75112
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: humidity_relative_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8e28a505-4f7b-4180-b962-b41bb5b8c973
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d31046e0-dd00-490a-be2e-09206d6c613a
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: index_uv_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bd7fdbe8-40d6-463c-904e-32365f2ab81c
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50a2e1ca-9ef7-4286-abf5-50c1ff05dab8
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: index_uv_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 793e1092-a180-4a12-9660-90c716b2ac0e
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d46449a2-8b2a-4cc9-a7fb-3df176bf139f
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: index_uv_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: db7e53ea-f6d1-4fc7-858d-22a45284b100
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c3416aa8-7eca-42d4-858d-21ecbe934307
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: minutes_of_ice_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9c1d294d-0e43-48d4-997f-2142cf80a17c
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9fe45ed0-3b19-45b5-80d2-493310dea1f5
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: minutes_of_precipitation_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40549062-57d8-4a23-876d-04cd41ab99e5
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c106bf9-98b8-40bd-9ecf-b5f802b1df35
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: minutes_of_sun_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bd1040af-c963-4ef1-b8b7-b91d35a33946
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 513aaa96-9b92-4183-bc27-50ae06fb240a
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: minutes_of_rain_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cf36b971-00a3-4f7f-9109-45e38c02702a
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9aab1c17-2a78-4873-a00f-4d9c3a244320
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: minutes_of_snow_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 429cafd9-0fbe-4863-84b5-dfe7f030a71a
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e5e0b93-8b95-4752-b6ee-2a1f2d1c68fe
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: has_ice
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a1b7b9a7-1092-4cc7-9694-b876a442a9ec
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87ebad3c-dc9e-4f82-9061-28e9acc724d9
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: ice_lwe_rate_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 21939a2c-4717-4abb-b739-53b160fbaac0
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc026a1d-846d-4e8f-8a90-632ca0faff32
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: ice_lwe_rate_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 222c36b9-612c-4309-a125-bbd265dcbb4a
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b47d69f-fc85-4968-9151-5b6114165a74
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: ice_lwe_rate_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ed7923e-f58d-4725-9678-10ae09af727a
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cd16f91-5b44-4c97-b049-fee2f4ad21ad
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: ice_lwe_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c8a3d8b5-6ff8-4751-bbc5-01b861739c58
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 037924e2-880f-4eb6-9812-9b04f3eeef3b
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: has_precipitation
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4fb04457-b762-424c-8413-dc86a0c4630a
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3fbba99f-3909-4373-a0a8-3a98dce46d20
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: precipitation_lwe_rate_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 03d97563-23f0-4785-a314-4fa904da165d
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3fb16950-3e73-421e-95c3-e77239372f5d
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: precipitation_lwe_rate_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3603898b-9eb8-489b-9518-3f299832b581
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 722d4537-5907-4a92-b36e-d8e6bec5a54f
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: precipitation_lwe_rate_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52ad78ff-f1b6-4825-9611-27a01a637507
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c025ff20-5c0e-4982-975c-67598363400a
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: precipitation_lwe_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fd62a334-ecaa-4051-b5c9-0aa8d506cc3e
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0151504-431a-45bf-9cd7-74a19013eb43
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: precipitation_type_desc_predominant
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c83655d9-ff40-428c-ba43-b264a325b50a
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc2e1b68-c2f6-4971-8c95-4b5a3ead33d8
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: INT
+        description: ""
+        name: precipitation_type_predominant
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 57b1a491-4568-43e8-81e4-38cfec57b21c
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 43b55fe1-88ef-4620-81fb-e3d2322a64ad
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: pressure_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d41cc6d2-0b25-4a31-af13-6934c826edb0
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 409de9b2-2bbd-40a5-94bb-300bc273e23d
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: pressure_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5027d789-9c65-48e2-ae8f-333f24aca3f5
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a6a10c2-8384-48da-b181-973f8d3b7b62
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: pressure_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: be8380c9-c5fb-431a-9c05-c889091f44d4
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 803d0463-2757-427f-aeaf-494e972bacb2
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: pressure_msl_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 38e15f9a-3732-42bb-a759-b032132bcf88
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0bf8275e-13e8-43c5-8a48-c7802859a77c
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: pressure_msl_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4bf9a55b-74b0-4da8-ab2d-dd82c97c6f99
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0187d88-8690-4475-9b06-325be828251f
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: pressure_msl_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b8a0636c-8f35-42d5-ac6d-67d1c901f18c
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b949e9ba-77d9-4dda-9fdd-198bf1417ffb
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: has_rain
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4c6e0430-4972-4dd2-92d7-b1e088b4b48b
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: eeb3fae2-cd4b-44f2-ac4d-fa255454f01a
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: rain_lwe_rate_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: bac12c18-896d-455d-ab90-d888a862b648
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2b1e7fab-6a00-4b04-b8e3-8fb1aa2ff7ab
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: rain_lwe_rate_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b56ad703-8366-4fc7-abef-2ed4b2fca130
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 608d50e6-fe60-4b80-919d-8021d5bedb95
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: rain_lwe_rate_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 04d3fdd4-b545-487b-a5d5-0cf59aa9689f
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d4f4f10-209f-4b93-8028-b620dd5986ce
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: rain_lwe_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4048fff3-c07d-4b9e-aaf3-9849e28b8097
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e790aed7-1fd8-489e-9199-799ed142507e
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_cover_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ecd187ef-0860-497c-a4ef-b827f066a530
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 360a9cb1-03ee-4783-82c4-7fdda6f7808a
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_cover_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: afbebeae-f7ef-4567-88c0-c377424223d1
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 885fc9a2-f7a4-47ee-9891-af4abb822417
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_cover_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 93bef4e8-ce2c-43bf-a6d4-4bf202b0f55e
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c39d1b01-47a1-4af6-a884-c5bcff15ed22
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_depth_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ffa0f49d-f14b-4bcd-8ba9-5f31722f990f
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 798d42b1-e7b2-4962-be21-921ba5ca36bf
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_depth_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fbdceee1-99c0-408d-b884-8b5491f2756e
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecb9998f-57b5-4696-8829-37e0c266e992
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_depth_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0cf5523c-8ea0-4a6e-86bc-fe569136dfdd
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5545b93f-58cb-4cf8-aebf-c2e384bea5c4
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: snow_liquid_ratio_accuweather_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec3f6270-d2b8-4cbd-ae59-8de08964d405
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a50af648-2345-4db0-b27c-8980438156a5
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: snow_liquid_ratio_accuweather_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 486d74d0-35ad-41ab-822d-2737b3fa78ca
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e4e46538-2971-4acd-aa5e-0695963cb3e4
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: snow_liquid_ratio_accuweather_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 12297dfe-61df-4b41-9a29-67d06797d057
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28fdade9-defa-4dc4-9603-e3d7c2c6253f
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: BOOLEAN
+        description: ""
+        name: has_snow
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5802e4c3-cd3c-4be5-a74e-78fcdfde1e14
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9873f3ef-f17c-416c-84fa-6bc6e24a6935
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 92fa0ff4-567c-45bf-88cc-674e12a68831
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: edf0e259-14cc-432b-be6f-adbbd7a6fb31
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7430a249-c5ef-46ef-94f0-4369370bc253
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cfdd9150-21d1-48cb-9be7-701d3d368413
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad09fc42-ba25-4e52-84fc-d4178d6eb695
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: dac7ca0b-1bc6-480e-b3eb-79d9a8d97952
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: snow_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b35e0a2f-f968-4838-8499-23de78adb768
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5305f1c-c343-4ff4-9225-5a66302a85c4
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: snow_lwe_rate_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 04be7cd4-fb52-4e1f-9842-a889b28a46c2
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b3ec6052-c522-49cf-92cb-50853a90f725
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: snow_lwe_rate_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 98154618-3840-47b3-9333-d78a712e3241
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f0c9aca5-4173-42a2-bcfe-83a6d1cac688
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: snow_lwe_rate_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d499288c-8513-441d-a376-65b4d5f650b8
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 96bee557-e175-49f4-a389-365ecfe2ad3b
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: snow_lwe_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 82eeb630-c31d-42dc-a0ea-bc1e0f8aeff9
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba7f6cc8-a11c-41aa-b574-7eed988426b4
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: solar_irradiance_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7bd3ad62-4da9-4c1a-b5df-3ab8309c7c47
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8f1baa0a-bd17-4b27-be72-8e09f883bb33
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: solar_irradiance_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3df2dc60-3b61-4550-987b-60451ea57c79
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f3de133-e5ce-4f1a-a7d0-8253deda2526
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: solar_irradiance_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ab06ddeb-50c3-43d8-813a-6753ff3f8f89
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d136e144-c18d-4b6f-81e8-13966faf750b
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: solar_radiation_net_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f3ec6769-5eac-4819-9f4d-b2f9ca5a7fa3
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2f8a005-aa53-4eb5-bd22-4ae527a3c631
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: solar_radiation_net_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b211d7bc-5bf5-4676-b65d-7647f4ea1d8e
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 929551f9-025c-4d44-8515-6aaad738db2a
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: solar_radiation_net_total
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 95c8925f-017f-41f1-84ff-a2486d69c78e
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8b62a258-3321-4ef8-832b-52b4c6f8df61
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 57906343-bc14-4610-81ee-cbe1cee1254d
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecb06b32-de2a-42bf-98d4-43da968be751
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3da0c945-79f1-41bf-850e-2e69d9504ce8
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4f2a6681-0319-4959-ba51-cc38f502c4c2
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7ee483e3-42d6-4458-b2a4-012dea1b2073
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6458581-c0f4-4155-ae8b-0ecba9b99199
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_dew_point_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f739e326-db37-47e0-bfd1-c38d7ac49e6a
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c33ea4e5-9afd-4d30-a9d1-cdf91b96825f
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_dew_point_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7515c5b7-de3c-49ca-affd-90335e0ac016
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4482dca-76d0-48a2-8535-cdea1f0cf099
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_dew_point_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8f06e71a-44b3-458a-8dd8-056f6322121a
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa5244fa-ccbb-4a69-9855-6f6010b5cdbe
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_heat_index_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2da2ac58-391b-4abd-a044-ccdba8fd3ca0
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b13b231-e759-4aac-9a8c-1e466e37d585
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_heat_index_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d2786953-a2ba-4b0e-a792-9a6d010dfc3d
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 39ddb09b-b142-4179-9fd8-6911fe6aa59d
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_heat_index_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 48d6c290-5e20-4d75-80d1-6df1a24c7f0e
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b1af2ca1-7306-490a-be28-62ab309c4292
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_realfeel_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: acad66af-20b9-40d1-a3f6-d9f2d0b32285
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 554e1afa-99ea-469c-ab58-12dd4fb9f6c5
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_realfeel_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f46fd9d0-998b-4d07-953d-ffeb6a5cf900
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1a75e12f-875e-44d0-ade1-7521b7007226
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_realfeel_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a0481ca4-33cd-4ac6-9b16-7a09d4709d85
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: da76d4be-b403-4604-803a-e0a33ce2b832
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_realfeel_shade_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 059224ce-c682-4daa-ba34-7388123b22a6
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6efdb9a-5dc9-49f6-bfd9-7529c46d4f0b
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_realfeel_shade_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8da2071e-0630-478e-99f1-3989499d0ef5
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a4e5658c-53f8-4b06-b28a-47560a9ee424
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_realfeel_shade_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 910bb838-dd22-4575-9c25-a3d53bb4c3b2
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d91be6d1-6eb3-482e-9e55-6923ad2af6b1
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_wind_chill_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 484e8981-078a-4e41-9adb-77d5cfad41ba
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 174ca6b1-4341-4be8-bab4-f2b751289982
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_wind_chill_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c3ec9bf9-eece-4855-adb0-17f492354770
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f5141ca1-1269-49de-b93b-7f1fbf4a3ff6
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: temperature_wind_chill_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a67f5031-1f8e-460a-8269-d9f845a6e1f4
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa7e516c-ec6e-4549-9f21-8f20f277ce9f
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: visibility_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 75004097-d5dd-4171-a352-d87001026c3f
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b6c1f325-e6af-4785-ae11-383344c7582e
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: visibility_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4daa3db8-0855-439d-b040-766f39bc78c6
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8516197e-6b9b-441c-af76-0b7e9fc26f9b
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: visibility_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ddb2cd9-b68e-4eb3-a284-1eafb8bd32e8
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7d9d273a-f556-4e0a-b9be-e311397a3808
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: wind_direction_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c85fa4ac-0703-45a0-a136-7282bbd0eade
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49c736ab-2402-47b4-95f9-dc0f30f07dbc
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: wind_direction_predominant
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0f6ab7c8-4432-4b97-adf8-aec6e9e7c29d
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: df1b28b1-e5d3-4ce9-9d4c-2107af726a45
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: wind_gust_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a7d20a1e-2e94-4b4f-8bbb-b8ba408beb81
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6fc7ba2c-a151-44d3-a3e2-fa871b02da95
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: wind_gust_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9a9cd739-aee6-400c-9df8-5315a6ec3061
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6642a867-7cc8-4df4-b683-77659e1a8d10
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: wind_gust_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e3b77405-5e3f-4a3e-af13-9bbde18db2dd
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 50606a06-a280-4ca2-9718-f779399ebed7
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: wind_gust_instantaneous_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e61ceed4-95f8-4ff6-bd54-81f8975c7515
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23d20b74-5c11-48ab-bdc9-b3dcb210cc00
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: wind_gust_instantaneous_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40b90268-1651-4116-aad1-d5490dc992f8
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6452e95e-63f3-430a-910f-41378eae6335
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: STRING
+        description: ""
+        name: wind_gust_instantaneous_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3caa36d7-98e1-4c33-a1b1-6aa46875e903
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 369162b6-95a5-42f9-95b3-673b65e40771
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: wind_speed_avg
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9ae0f51d-d04b-43c7-bd74-6036c2c4c6d7
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bfeb5df1-12c4-465c-aab0-31094c8d6f07
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: wind_speed_max
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ad404497-1ea6-4fac-865d-e4119a36c006
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c1c4a9d3-32a1-4cec-b145-8ebc64dccc70
+          stepCounter: 27c740b1-29f4-4509-9cf3-ff3a690fb913
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: wind_speed_min
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8d58ab9c-f4b5-4499-97d8-92a62ba4d1b9
+                stepCounter: 90660a3a-5d9e-417b-991a-daf421e553f5
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: WEATHER_SOURCE
+            nodeName: historical_daily_calendar_metric
+        join:
+          joinCondition: FROM {{ ref('WEATHER_SOURCE', 'historical_daily_calendar_metric') }} `historical_daily_calendar_metric`
+        name: stg_historical_daily_calendar_metric
+        noLinkRefs: []
+  name: stg_historical_daily_calendar_metric
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

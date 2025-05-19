@@ -1,0 +1,263 @@
+fileVersion: 1
+id: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+name: hello-goodbye_morning
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: SCRATCH-DB
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 096208bc-88ee-4ab5-a9b1-f44f664ca027
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Area Name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ee426872-b2c6-4d94-8408-c625334cb579
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a087b4a9-a398-44a8-8c24-109272c4a35e
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Area ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 68fe8b50-1002-4578-9579-317b15116d79
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f46b023-6ff0-4742-bae2-76808b85502e
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Park Name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: b947da47-e805-4509-b302-6d93cfc6c6de
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: cc191519-4485-4730-9b29-e87abfe440da
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: LONG
+        description: ""
+        name: Park ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed9b90ac-3f7d-4a03-a5ff-9227ecd726d9
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59611fef-b089-43a9-9e56-8f501058a853
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Squirrel ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af1433d6-bd4f-4fba-9a03-4c010eba2bb6
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59ec71f0-8a85-4542-87dd-3bf92fad1392
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Primary Fur Color
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de7fb19e-bf1c-481a-bab4-f79b9692e766
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f64373cc-d969-40a6-9d4b-0383c04f5c82
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Highlights in Fur Color
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7d3e2a7f-1db0-401e-a230-1857f2dea77b
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40565916-bd7f-44f5-ae09-033122990e33
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Color Notes
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cbba0239-1a29-42a9-8100-cda6e8603764
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0271b0db-1b6b-4edd-93c6-75bfd73718fe
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Location
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5bd00a4-046c-42c1-bf0e-3c60c1b43dc4
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25acf279-fbfe-4e19-ad08-e62700440769
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Above Ground (Height in Feet)
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 2d512b19-be29-4cf6-8183-cf0802d4a8b4
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ac156f69-0519-4827-aa78-fc4799531ef7
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Specific Location
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: cd140863-87c2-4316-8507-5b48d9f04f61
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 172a8509-2573-41a1-9063-9f7d13554a15
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Activities
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7eee7249-2b65-42f0-a952-eaacfe9efab2
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b7b1636d-4212-4f8c-9215-f69d8f1d4033
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Interactions with Humans
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ac7e49d5-bf2e-45d1-a4ff-60eea4d7c832
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b38d28b4-4a32-4186-8a35-c6e7a4139677
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: STRING
+        description: ""
+        name: Other Notes or Observations
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 6dc9ea88-67e4-4578-bd52-9a3b0ffa1a66
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8ca134ff-527b-48a8-8f06-c5cb2406e544
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: Squirrel Latitude (DD.DDDDDD)
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: af4bca18-98bf-499c-a1fb-c6c07b217df8
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 18588a21-92f7-462f-a556-2fc961b104e3
+          stepCounter: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: Squirrel Longitude (-DD.DDDDDD)
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8ad7bc02-55d8-4157-bacb-6f1c820dd68f
+                stepCounter: 202ce2bb-33e8-4ceb-92e4-61f5e997bb56
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SCRATCH-DB
+            nodeName: stg_squirrel_data
+        join:
+          joinCondition: FROM {{ ref('SCRATCH-DB', 'stg_squirrel_data') }} `stg_squirrel_data`
+        name: hello-goodbye_morning
+        noLinkRefs: []
+  name: hello-goodbye_morning
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

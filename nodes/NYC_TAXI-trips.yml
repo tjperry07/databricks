@@ -1,0 +1,118 @@
+fileVersion: 1
+id: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+name: trips
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: NYC_TAXI
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5ec59b9-771f-42c1-993a-7c37924fcb97
+          stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: tpep_pickup_datetime
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 25231729-8ee1-4556-ada5-c4abcb59305b
+          stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        name: tpep_dropoff_datetime
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a6bdfb4f-2f9b-4f24-8608-49f372c7fb17
+          stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: trip_distance
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f43baec2-8a0c-4927-9f7e-e8d45c30bb31
+          stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+        config: {}
+        dataType: DOUBLE
+        defaultValue: ""
+        description: ""
+        name: fare_amount
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8683e85f-d9d7-4ef7-ab91-ab4f98b3324e
+          stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: pickup_zip
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 397eef4e-321f-44b9-bc9e-16dbfc68249c
+          stepCounter: 23162eae-4f03-4b7a-9a11-e6c5eb96fa91
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: ""
+        name: dropoff_zip
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: trips
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

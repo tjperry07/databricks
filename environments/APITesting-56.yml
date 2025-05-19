@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "56"
+mappingDefinitions:
+  NYC_TAXI:
+    database: ""
+    schema: ""
+  WEATHER_SOURCE:
+    database: ""
+    schema: ""
+name: API Testing
+type: Environment

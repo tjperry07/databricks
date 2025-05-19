@@ -1,5 +1,7 @@
 defaultStorageMapping: SCRATCH-DB
 fileVersion: 1
 locations:
+  - NYC_TAXI
   - SCRATCH-DB
   - SOURCE_SQUIRREL
+  - WEATHER_SOURCE

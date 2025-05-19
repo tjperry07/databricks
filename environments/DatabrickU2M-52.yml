@@ -1,11 +1,17 @@
 fileVersion: 1
 id: "52"
 mappingDefinitions:
+  NYC_TAXI:
+    database: ""
+    schema: ""
   SCRATCH-DB:
     database: coalesce_aws_dbx
     schema: tatiana_dev
   SOURCE_SQUIRREL:
     database: coalesce_aws_dbx
     schema: tatiana_docs_testing
+  WEATHER_SOURCE:
+    database: ""
+    schema: ""
 name: Databrick U2M
 type: Environment

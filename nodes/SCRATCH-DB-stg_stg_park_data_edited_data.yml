@@ -409,6 +409,30 @@ operation:
               - columnCounter: 15923209-682a-47a4-9f9c-21a64551e465
                 stepCounter: 515da50d-718a-491e-a442-4b809e25ba6b
             transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9bbeb801-fc45-4d4f-b207-8eb551adbc89
+          stepCounter: 9ef617e1-d270-4775-b6cc-409d812a1e0e
+        config: {}
+        dataType: INTEGER
+        defaultValue: ""
+        description: ""
+        keyColumnType: None
+        name: RANK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: "0"
+                stepCounter: "0"
+            transform: |-
+              RANK() OVER (
+                PARTITION BY "O_CUSTKEY"
+                ORDER BY "O_ORDERDATE" DESC
+              )
+        systemColumnType: None
     cteString: ""
     enabledColumnTestIDs: []
     sourceMapping:
