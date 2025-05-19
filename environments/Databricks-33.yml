@@ -2,8 +2,8 @@ fileVersion: 1
 id: "33"
 mappingDefinitions:
   NYC_TAXI:
-    database: ""
-    schema: ""
+    database: samples
+    schema: nyctaxi
   SCRATCH-DB:
     database: coalesce_aws_dbx
     schema: tatiana_dev
@@ -11,7 +11,7 @@ mappingDefinitions:
     database: coalesce_aws_dbx
     schema: tatiana_docs_testing
   WEATHER_SOURCE:
-    database: ""
-    schema: ""
+    database: samples
+    schema: accuweather
 name: Databricks
 type: Environment
