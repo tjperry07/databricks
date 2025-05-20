@@ -7,6 +7,9 @@ mappingDefinitions:
   NYC_TAXI:
     database: ""
     schema: ""
+  SECOND_BLANK_LOCATION:
+    database: ""
+    schema: ""
   WEATHER_SOURCE:
     database: ""
     schema: ""

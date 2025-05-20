@@ -10,6 +10,9 @@ mappingDefinitions:
   SCRATCH-DB:
     database: coalesce_aws_dbx
     schema: tatiana_dev
+  SECOND_BLANK_LOCATION:
+    database: ""
+    schema: ""
   SOURCE_SQUIRREL:
     database: coalesce_aws_dbx
     schema: tatiana_docs_testing
