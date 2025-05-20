@@ -1,6 +1,6 @@
 fileVersion: 1
 id: d069fd7a-2d18-4554-9b64-b7726b1a7b9c
-name: hello-goodbye_morning
+name: hello-goodbye
 operation:
   config:
     insertStrategy: INSERT
@@ -252,9 +252,9 @@ operation:
             nodeName: stg_squirrel_data
         join:
           joinCondition: FROM {{ ref('SCRATCH-DB', 'stg_squirrel_data') }} `stg_squirrel_data`
-        name: hello-goodbye_morning
+        name: hello-goodbye
         noLinkRefs: []
-  name: hello-goodbye_morning
+  name: hello-goodbye
   overrideSQL: false
   schema: ""
   sqlType: Stage
