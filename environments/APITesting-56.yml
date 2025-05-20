@@ -1,6 +1,9 @@
 fileVersion: 1
 id: "56"
 mappingDefinitions:
+  BLANK_LOCATION:
+    database: ""
+    schema: ""
   NYC_TAXI:
     database: ""
     schema: ""
